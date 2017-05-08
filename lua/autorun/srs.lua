@@ -7,7 +7,7 @@ hook.Add( "PlayerSay", "RollChatCommand", function( ply, text, public )
         for _, pl in pairs( player.GetAll( ) ) do 
             if pl:GetPos( ):DistToSqr( ply:GetPos( ) ) < 100000 then
                 if CLIENT then return end
-                DarkRP.talkToPerson( pl, white, Valfunde.SRS.Roll .. " : ", red, roll )
+                DarkRP.talkToPerson( pl, white, Valfunde.SRS.Roll .. " ", red, roll )
             end
         end
         return ""
