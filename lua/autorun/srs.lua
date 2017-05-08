@@ -1,5 +1,5 @@
 include( "srs_config.lua" )
-local green, red = Color(0, 255, 0), Color(255, 50, 50)
+local white, red = Color(255, 255, 255), Color(255, 50, 50)
 
 hook.Add( "PlayerSay", "RollChatCommand", function( ply, text, public )
 	if string.lower( string.sub( text, 1, 5 ) ) == "/roll" then
@@ -7,7 +7,7 @@ hook.Add( "PlayerSay", "RollChatCommand", function( ply, text, public )
         for _, pl in pairs( player.GetAll( ) ) do 
             if pl:GetPos( ):DistToSqr( ply:GetPos( ) ) < 100000 then
                 if CLIENT then return end
-                DarkRP.talkToPerson( pl, green, Valfunde.SRS.Roll .. " ", red, roll )
+                DarkRP.talkToPerson( pl, white, Valfunde.SRS.Roll .. " : ", red, roll )
             end
         end
         return ""
