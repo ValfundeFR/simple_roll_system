@@ -1,3 +1,9 @@
+--[[-------------------------------------------------------------------------
+Script by Valfunde
+If you have any problems, don't hesitate to contact me or add me on steam (Valfunde *Banna Army) but write a comment before adding me
+This is configuration file.
+---------------------------------------------------------------------------]]
+
 if not Valfunde then Valfunde = {} end
 Valfunde.SRS = {}
 
